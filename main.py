@@ -1,6 +1,6 @@
-"""decompressor_0646fd - Async task runner."""
+"""decompressor_1b0d3b - Async task runner."""
 import asyncio, os
-TAG = "decompressor_0646fd"
+TAG = "decompressor_1b0d3b"
 async def task(name: str, delay: float = 0.1):
     print(f"[{TAG}] Task '{name}' started")
     await asyncio.sleep(delay)
